@@ -19,8 +19,10 @@ client
 		// Basic chat command, but with an added webhook.
 		say(text as message)
 			set category = null
-			world << "<b>[src]</b>: [html_encode(text)]"
-
+			/* updating this to include the source name and source's character name*/
+			world << "<b>[src]</b>:[html_encode(text)]"
+			//gets the user key to get their information (character name)
+			var/key_info/user_info = new(key)
 			// Send the message to the Discord webhook.
 			HttpPost(
 				/* Replace this with the webhook URL that you can Copy in Discord's Edit Webhook panel.
@@ -37,6 +39,10 @@ client
 					They override the webhook's name and avatar for the post.
 				*/
 				list(
-					content = text
+					content = "[user_info.Get("name")]: [text]"
 				)
+				// displays character's name with the message after getting the user info from the key and shit
 			)
+
+/* davingo goal is to make the webhook include the player's name, character name alongside the message
+*/
