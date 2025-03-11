@@ -2,11 +2,11 @@
 /*
 MAP_PLANE_MASTERS: 
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1738629784
+LAST_COMPILE_TIME: 1741705988
 DIR: code code\databook code\databook\default_pages code\items code\jutsu code\mob code\perks icons\base icons\turf 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 516.1654
+LAST_COMPILE_VERSION: 516.1658
 WINDOW: shinobi no mono.dm;shinobi no mono.dme;Konohagakure.dmm;code\admin.dm;code\skin.dmf;code\databook\databook.dm;code\jutsu\jutsu.dm
 FILE: code\jutsu\jutsu.dm
 MAP_INSTANCE_MODE: copy
