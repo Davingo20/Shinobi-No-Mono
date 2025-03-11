@@ -39,9 +39,10 @@ client
 					They override the webhook's name and avatar for the post.
 				*/
 				list(
-					content = "[user_info.Get("name")]: [text]"
+					content = "[copytext(key, 1, 7) == "Guest-" ? key : user_info.Get("name")]: [text]"
 				)
-				// displays character's name with the message after getting the user info from the key and shit
+				// shows guest key if guest, otherwise shows character name
+				// tbh i just added this here to goof about it can be removed in the final version if yall dont fw it
 			)
 
 /* davingo goal is to make the webhook include the player's name, character name alongside the message
